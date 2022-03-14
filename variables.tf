@@ -59,7 +59,7 @@ variable "instance_class" {
   default     = "db.t3.small"
 }
 
-var "allocated_storage" {
+variable "allocated_storage" {
   description = "The amount of storage to allocate for the DB instance."
   type        = number
   default     = 5
