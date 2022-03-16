@@ -28,6 +28,11 @@ variable "private_subnets_cidr_blocks" {
   type        = list(string)
 }
 
+variable "public_subnets_cidr_blocks" {
+  description = "The public subnets CIDR blocks to use."
+  type        = list(string)
+}
+
 variable "entities" {
   description = "A set of vault clients to create"
   default = [
